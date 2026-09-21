@@ -1,0 +1,101 @@
+/* --- Contacto --- */
+.contact-section {
+    padding: 60px 20px;
+    max-width: 1100px; /* Limita el ancho para que no se estire de lado a lado */
+    margin: 0 auto;    /* Centra todo el bloque en la pantalla */
+    background-color: #ffffff; /* Quita el fondo rosa de toda la pantalla si se colaba */
+}
+
+.contact-main-title {
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--color-primary);
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Fuerza las dos columnas alineadas */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide la pantalla en dos mitades exactas */
+    gap: 40px; /* Espacio de separación en medio de ambos bloques */
+    align-items: start;
+}
+
+/* Ajustes específicos de la columna de información */
+.contact-info-container {
+    width: 100%;
+}
+
+.contact-info-title {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.contact-info-subtitle {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #fdf8f7;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.contact-icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajustes específicos de la columna del formulario */
+.contact-form-container{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eeeeee;
+    width: 100%; /* Evita que se estire horizontalmente de más */
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-sizing: border-box; /* Evita que los inputs se salgan de la caja */
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: none;
+    padding: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Si se abre en un celular, se apilan verticalmente de forma correcta */
+@media (max-width: 800px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}

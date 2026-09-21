@@ -1,0 +1,22 @@
+/* --- FOOTER--- */
+.simple-footer {
+    background-color: #3f3d46; /* El color gris oscuro/vino de tu barra de navegación */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100vw; /* Toma el 100% del ancho de la ventana gráfica */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 60px; /* Separación elegante con la sección de arriba */
+}
+
+.simple-footer p {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+

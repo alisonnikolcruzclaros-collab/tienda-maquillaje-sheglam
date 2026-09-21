@@ -1,0 +1,76 @@
+/* GALERIA */
+.gallery-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* La cuadrícula principal que contendrá las tarjetas */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+/* Cada tarjeta individual de la galería */
+.gallery-item {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition-smooth);
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Contenedor de la foto para asegurar el tamaño ideal */
+.gallery-img-container {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Barra de información debajo de la foto (Nombre y Precio alineados) */
+.gallery-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #f0f0f0;
+}
+
+.product-name {
+    font-weight: 600;
+    color: var(--color-primary);
+    font-size: 1rem;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #2b2d42;
+    background-color: var(--color-secondary);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
